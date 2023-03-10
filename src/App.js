@@ -14,7 +14,7 @@ function App() {
         <h1>
          Bacchus Tech Website
           <br />
-          Coming Soon
+          {/* Coming Soon */}
         </h1>
         <Timer />
         <Optin />
