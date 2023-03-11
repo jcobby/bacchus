@@ -6,21 +6,13 @@ import Timer from "./components/Countdown/Timer";
 import Optin from "./components/Optin/Optin";
 
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <h1>
-         Bacchus Tech Website
-          <br />
-          {/* Coming Soon */}
-        </h1>
-        <Timer />
-        <Optin />
-        <Preloader />
-      </div>
-    </div>
+    <main>
+      <NavBar />
+    </main>
   );
 }
 
