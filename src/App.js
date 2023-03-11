@@ -1,13 +1,13 @@
-import React from "react";
-
 import './App.css';
-// import NavBar from './components/NavBar';
+import React from 'react';
+import NavBar from './components/NavBar';
 
 function App() {
+  
   return (
-    <main>
-      <p>Hello</p>
-    </main>
+    <React.Fragment>
+      <NavBar />
+    </React.Fragment>
   );
 }
 
