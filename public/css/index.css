@@ -1,0 +1,552 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: url(../assets/images/hero-backgroung-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+}
+body {
+  background-color: #fff;
+}
+header {
+  display: flex;
+  /* height: 200px; */
+  justify-content: space-between;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.logo {
+  /* width: 10%; */
+  /* height: 4rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.logo img {
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+}
+nav {
+  /* width: 40%; */
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #030300;
+}
+nav ul li {
+  padding: 1rem 3rem;
+  transition: all 0.3s ease;
+}
+nav ul li:hover {
+  /* From https://css.glass */
+  background: rgba(108, 117, 170, 0.64);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  cursor: pointer;
+}
+/* ###################### HERO SECTION ######################## */
+.hero {
+  width: 100%;
+  height: 70vh;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../assets/images/descritionImage.jpg');
+  background-size: cover;
+
+}
+
+.hero:before {
+  content: "";
+  background: rgba(0,0,0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  height: 70vh;
+  margin-top: 5.5rem;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+}
+.highlight {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+.highlight span {
+  width: 4rem;
+  height: 2px;
+  background-color: #ccc;
+}
+.highlight h4 {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: white;
+}
+
+.hero-description h3 {
+  color: white;
+}
+
+.hero-description div {
+  color: white;
+}
+.highlight h4 span {
+  text-transform: uppercase;
+  background: none;
+}
+.hero-description h3 {
+  font-size: 3.5rem;
+  text-wrap: balance;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.hero-description p {
+  color: white;
+  font-weight: 450;
+  text-wrap: balance;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.hero-img {
+  width: 45%;
+  z-index: 10;
+}
+
+
+/* Base styles for the button */
+.get-started-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #0074d9; /* Button background color */
+  color: #ffffff; /* Text color */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.get-started-button:hover {
+  background-color: #0056a4; /* Darker background color on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+
+/* Media query for smaller screens (e.g., tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-top: 2rem;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+}
+
+/* ############### SERVICES SECTION ################### */
+.services {
+  padding: 4rem;
+  background: none;
+}
+.services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.services-header h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1d2d44;
+  position: relative;
+
+}
+
+.services-header h3:before,
+.services-header h3:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #1d2d44;
+  display: inline-block;
+}
+.services-header h3:before {
+  margin: 0 15px 10px 0;
+}
+
+.services-header h3:after {
+  margin: 0 0 10px 15px;
+}
+
+
+
+.services-header h4 {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+
+/* .section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--primary-color);
+  display: inline-block;
+} */
+
+.section-title h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/* Base styles for larger screens */
+.services {
+  background: transparent;
+}
+
+.accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.accordion-container {
+  width: 100%;
+  flex: 1 0 200px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  background-color: #f5f5f5f5;
+  padding: 0.6rem;
+}
+
+.label h4 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.label img {
+  width: 3rem;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+}
+
+.unknown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.unknown h4 {
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.unknown p {
+  background-color: rgba(108, 117, 170, 0.64);
+  padding: 1rem 3.5rem;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .accordion {
+    grid-template-columns: 1fr; /* Stack items in a single column on small screens */
+    gap: 1rem;
+  }
+
+  .label {
+    padding: 1rem; /* Adjust the padding for better spacing on smaller screens */
+  }
+
+  .label h4 {
+    font-size: 1.1rem; /* Reduce font size for better readability on small screens */
+  }
+
+  .label img {
+    width: 2rem; /* Decrease image size for small screens */
+  }
+
+  .content {
+    padding: 1rem; /* Adjust padding for better spacing on small screens */
+  }
+
+  .unknown h4 {
+    font-size: 1.2rem; /* Adjust font size for better readability on small screens */
+  }
+
+  .unknown p {
+    padding: 1rem 2rem; /* Adjust padding for better spacing on small screens */
+  }
+}
+
+/* ############################### Technologies ################################### */
+.technologies {
+  padding: 6rem 0;
+}
+.technologies h3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+.techs {
+  overflow: hidden;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+.techs-slide {
+  display: inline-flex;
+  gap: 2rem;
+  padding-right: 0.8rem;
+  animation: 35s slide infinite linear;
+  white-space: nowrap;
+  position: relative;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.techs-slide img {
+  width: 6rem;
+  height: 5.5rem;
+  background-size: contain;
+}
+.techs:before,
+.techs:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.techs:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.techs:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+/* ############################ Contact Us ##################################### */
+.contact {
+  padding: 4rem;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact > h4 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+}
+.contacts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tacts-items > h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.tacts-items ul {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tacts-items ul li {
+  word-spacing: 0.3rem;
+  font-size: 1.2rem;
+}
+.contact-form {
+  width: 50%;
+  padding: 4%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #588cda;
+}
+.form-header {
+  align-self: flex-start;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+}
+.form-header::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 3px;
+  color: white;
+  background: #ffffff;
+  top: -0.3rem;
+  left: 0;
+}
+.rendered-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formbuilder-select {
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+}
+textarea {
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  outline: none;
+}
+select {
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+.formbuilder-button button {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem 4rem;
+  border: none;
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column; /* Stack elements in a single column on small screens */
+    padding: 2rem;
+  }
+
+  .contacts, .contact-form {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .contact-form .form-header {
+    text-align: center; /* Center-align the header on small screens */
+  }
+
+  .contact > h4 {
+    font-size: 1.5rem; /* Reduce font size for better readability on small screens */
+  }
+
+  .contacts h5 {
+    font-size: 1.3rem; /* Reduce font size for better readability on small screens */
+  }
+
+  .contacts ul li {
+    font-size: 1rem; /* Reduce font size for better readability on small screens */
+  }
+
+  .rendered-form {
+    width: 100%; /* Full width for small screens */
+  }
+}
