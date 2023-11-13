@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white; /* Navbar background color */
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 /* Logo styles */
@@ -25,6 +25,26 @@
     background-size: cover;
   }
 
+  .fillLi {
+    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #ccc; */
+  padding: 0px;
+  margin: 0;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s; /* Transition effect for background-color and color */
+}
+
+.fillLi:hover,
+.fillLi:focus,
+.fillLi.active {
+  background-color: #0056a4; /* Darker blue background color on hover, focus, or click */
+  color: white; /* White text color on hover, focus, or click */
+}
+
+
   nav {
     /* width: 40%; */
     padding: 1rem;
@@ -36,7 +56,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 0px;
     margin: 0;
 }
 
@@ -46,16 +66,16 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #1d2d44; /* Link color */
-    transition: color 0.3s;
+    color: #1d2d44;
+    transition: color 0.2s;
     font-weight: 600;
     font-size: 18px; /* Adjust the font size as needed */
-    padding: 8px 16px; /* Add padding for a button-like appearance */
+    padding: 32px 30px; /* Add padding for a button-like appearance */
    
   }
   
   .nav-links a:hover {
-    color: #4c6c99; /* Link color on hover */
+    color: white; /* Link color on hover */
   }
 
 

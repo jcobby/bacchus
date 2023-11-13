@@ -3,7 +3,7 @@ import Navbar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./AboutUs.css";
-import backgroundimage from '../assets/images/cta-bg.jpg'
+import backgroundimage from "../assets/images/cta-bg.jpg";
 
 import {
   Navigation,
@@ -11,7 +11,6 @@ import {
   Scrollbar,
   A11y,
   Autoplay,
- 
 } from "swiper/modules";
 
 import "swiper/css";
@@ -24,305 +23,231 @@ function AboutUs() {
   return (
     <div>
       <Navbar />
-      <section id="testimonials" class="testimonials">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-              <h3>About Us</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident.
-              </p>
-            </div>
 
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-              <div className="swiper-container">
-                <div class="swiper-wrapper">
-                  <Swiper
-                    modules={[
-                      Autoplay,
-                      Navigation,
-                      Pagination,
-                      Scrollbar,
-                      A11y,
-                    ]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                  >
-                    <SwiperSlide>
-                      <div class="swiper-slide">
-                        <div class="testimonial-item">
-                          <div class="d-flex">
-                            <img
-                              src="assets/img/testimonials/testimonials-1.jpg"
-                              class="testimonial-img flex-shrink-0"
-                              alt=""
-                            />
-                            <div>
-                              <h3>Saul Goodman</h3>
-                              <h4>Ceo & Founder</h4>
-                              <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>
-                              Proin iaculis purus consequat sem cure digni ssim
-                              donec porttitora entum suscipit rhoncus.
-                              Accusantium quam, ultricies eget id, aliquam eget
-                              nibh et. Maecen aliquam, risus at semper.
-                            </span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div class="swiper-slide">
-                        <div class="testimonial-item">
-                          <div class="d-flex">
-                            <img
-                              src="assets/img/testimonials/testimonials-2.jpg"
-                              class="testimonial-img flex-shrink-0"
-                              alt=""
-                            />
-                            <div>
-                              <h3>Sara Wilsson</h3>
-                              <h4>Designer</h4>
-                              <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>
-                              Export tempor illum tamen malis malis eram quae
-                              irure esse labore quem cillum quid cillum eram
-                              malis quorum velit fore eram velit sunt aliqua
-                              noster fugiat irure amet legam anim culpa.
-                            </span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
 
-                    <SwiperSlide>
-                      <div class="swiper-slide">
-                        <div class="testimonial-item">
-                          <div class="d-flex">
-                            <img
-                              src="assets/img/testimonials/testimonials-3.jpg"
-                              class="testimonial-img flex-shrink-0"
-                              alt=""
-                            />
-                            <div>
-                              <h3>Jena Karlis</h3>
-                              <h4>Store Owner</h4>
-                              <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>
-                              Enim nisi quem export duis labore cillum quae
-                              magna enim sint quorum nulla quem veniam duis
-                              minim tempor labore quem eram duis noster aute
-                              amet eram fore quis sint minim.
-                            </span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div class="swiper-slide">
-                        <div class="testimonial-item">
-                          <div class="d-flex">
-                            <img
-                              src="assets/img/testimonials/testimonials-4.jpg"
-                              class="testimonial-img flex-shrink-0"
-                              alt=""
-                            />
-                            <div>
-                              <h3>Matt Brandon</h3>
-                              <h4>Freelancer</h4>
-                              <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>
-                              Fugiat enim eram quae cillum dolore dolor amet
-                              nulla culpa multos export minim fugiat minim velit
-                              minim dolor enim duis veniam ipsum anim magna sunt
-                              elit fore quem dolore labore illum veniam.
-                            </span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div class="swiper-slide">
-                        <div class="testimonial-item">
-                          <div class="d-flex">
-                            <img
-                              src="assets/img/testimonials/testimonials-5.jpg"
-                              class="testimonial-img flex-shrink-0"
-                              alt=""
-                            />
-                            <div>
-                              <h3>John Larson</h3>
-                              <h4>Entrepreneur</h4>
-                              <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>
-                              Quis quorum aliqua sint quem legam fore sunt eram
-                              irure aliqua veniam tempor noster veniam enim
-                              culpa labore duis sunt culpa nulla illum cillum
-                              fugiat legam esse veniam culpa fore nisi cillum
-                              quid.
-                            </span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
+  <section id="heroAbout" class="heroAbout d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 data-aos="fade-up">About Us</h2>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>At Bacchus, we are committed to delivering cutting-edge IT solutions that empower businesses to thrive in the digital era. With a team of skilled professionals dedicated to excellence, we specialize in designing, implementing, and managing cloud environments at an enterprise scale.  </p>
+          </blockquote>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Contact</a>
+            {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+
+        </div>
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-xl-5 img-bg" 
+></div>
+          <div class="col-xl-7 slides  position-relative">
+
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Empower your success with us</h3>
+                    {/* <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4> */}
+                    <p>At Bacchus, our vision is to be the forefront of technological evolution, driving innovation and setting industry standards. We aspire to create a future where businesses harness the full potential of technology seamlessly. Bacchus envisions a world where our expertise in cloud solutions, networking, cybersecurity, and software engineering becomes the cornerstone for businesses' success.</p>
+                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
+
+               
+
               </div>
+              {/* <div class="swiper-pagination"></div> */}
+            </div>
+            {/* <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> */}
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+      <section id="call-to-action" class="call-to-action">
+        <img src={backgroundimage} alt="" />
+
+        <div class="container">
+          <div
+            class="row justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="row gy-1 ">
+              <div class="col-lg-6 col-md-6 text-center">
+                <h3>Our Mission</h3>
+                <p>
+                We are committed to being a catalyst for our clients' success, offering cutting-edge services that seamlessly integrate technology into their business strategies. With a focus on innovation and a deep understanding of our clients' needs, we aim to elevate their operations to new heights.
+                </p>
+               
+              </div>
+              <div class="col-lg-6 col-md-6 text-center">
+                <h3>Our Vision</h3>
+                <p>
+                At Bacchus, our vision is to be the forefront of technological evolution, driving innovation and setting industry standards. We aspire to create a future where businesses harness the full potential of technology seamlessly. Bacchus envisions a world where our expertise in cloud solutions, networking, cybersecurity, and software engineering becomes the cornerstone for businesses' success.
+                </p>
+               
+              </div>
+              {/* <div class="col-lg-4 col-md-6 text-center">
+                <h3>Our Mission</h3>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+               
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
-      <section id="call-to-action" class="call-to-action">
-
-<img src={backgroundimage} alt="" />
-
-<div class="container">
-  <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-    <div class="col-xl-10">
-      <div class="text-center">
-        <h3>Call To Action</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
-
-<section id="team" class="team">
-
-
-<div class="container section-title" data-aos="fade-up">
-  <h2>Team</h2>
-  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-</div>
-
-<div class="container">
-
-  <div class="row gy-5">
-
-    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-      <div class="member-img">
-        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
-        <div class="social">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+      <section id="team" class="team">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
         </div>
-      </div>
-      <div class="member-info text-center">
-        <h4>Walter White</h4>
-        <span>Chief Executive Officer</span>
-        <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-      </div>
-    </div>
 
-    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-      <div class="member-img">
-        <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
-        <div class="social">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="container">
+          <div class="row gy-5">
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>
+                  Aliquam iure quaerat voluptatem praesentium possimus unde
+                  laudantium vel dolorum distinctio dire flow
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>
+                  Labore ipsam sit consequatur exercitationem rerum laboriosam
+                  laudantium aut quod dolores exercitationem ut
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>
+                  Illum minima ea autem doloremque ipsum quidem quas aspernatur
+                  modi ut praesentium vel tque sed facilis at qui
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="member-info text-center">
-        <h4>Sarah Jhonson</h4>
-        <span>Product Manager</span>
-        <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-      <div class="member-img">
-        <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
-        <div class="social">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="member-info text-center">
-        <h4>William Anderson</h4>
-        <span>CTO</span>
-        <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-      </div>
-    </div>
-
-</div>
-</div>
-</section>
+      </section>
       <Footer />
     </div>
   );

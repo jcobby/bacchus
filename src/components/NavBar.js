@@ -22,14 +22,17 @@ function Navbar() {
         <button className="menu-button" onClick={toggleMenu}>
           <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
         </button>
-        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li>
+        <ul
+          className={`nav-links ${menuOpen ? "active" : ""}`}
+          
+        >
+          <li className="fillLi">
             <a href="/">Home</a>
           </li>
-          <li>
+          <li className="fillLi">
             <a href="about">About Us</a>
           </li>
-          <li>
+          <li className="fillLi">
             <a href="contact">Contact</a>
           </li>
         </ul>
