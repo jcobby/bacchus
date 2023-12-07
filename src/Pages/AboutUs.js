@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import "./AboutUs.css";
 import backgroundimage from "../assets/images/cta-bg.jpg";
 
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+
 
 import "swiper/css";
 
@@ -33,7 +27,7 @@ function AboutUs() {
             <p>At Bacchus, we are committed to delivering cutting-edge IT solutions that empower businesses to thrive in the digital era. With a team of skilled professionals dedicated to excellence, we specialize in designing, implementing, and managing cloud environments at an enterprise scale.  </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Contact</a>
+            <a href="/about" class="btn-get-started">Contact</a>
             {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
           </div>
 
@@ -149,16 +143,16 @@ function AboutUs() {
                   alt=""
                 />
                 <div class="social">
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-twitter"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-facebook"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-linkedin"></i>
                   </a>
                 </div>
@@ -185,16 +179,16 @@ function AboutUs() {
                   alt=""
                 />
                 <div class="social">
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-twitter"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-facebook"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-linkedin"></i>
                   </a>
                 </div>
@@ -221,16 +215,16 @@ function AboutUs() {
                   alt=""
                 />
                 <div class="social">
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-twitter"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-facebook"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <i class="bi bi-linkedin"></i>
                   </a>
                 </div>

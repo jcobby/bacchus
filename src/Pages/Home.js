@@ -60,14 +60,14 @@ function Home() {
               needs.
             </p> */}
             <div className="button-div">
-              <a href="#" class="get-started-button">
+              <a href="/about" class="get-started-button">
                 ABOUT US
               </a>
             </div>
           </div>
 
           <div className="hero-img">
-            <img src={desktoplogo} alt="hero image" />
+            <img src={desktoplogo} alt="hero" />
           </div>
         </div>
       </section>
