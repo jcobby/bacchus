@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "../Components/NavBar";
 import "./Home.css";
 import desktoplogo from "../assets/images/hero-backgroung-desktop.svg";
-import blog1 from "../try/blog-1.jpg";
-import blog2 from "../try/blog-2.jpg";
-import blog3 from "../try/blog-3.jpg";
+
 
 import CloudComputing from '../assets/images/CloudComputing.jpg'
 import CyberSecurity from '../assets/images/CyberSecurity.jpg'

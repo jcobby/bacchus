@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "./AboutUs.css";
 import backgroundimage from "../assets/images/cta-bg.jpg";
 
