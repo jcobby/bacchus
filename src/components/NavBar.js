@@ -4,6 +4,7 @@ import "./Nav.css";
 import logo from "../assets/icons/Bacchus Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,13 +28,13 @@ function Navbar() {
           
         >
           <li className="fillLi">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="fillLi">
-            <a href="about">About Us</a>
+            <Link href="about">About Us</Link>
           </li>
           <li className="fillLi">
-            <a href="contact">Contact</a>
+            <Link href="contact">Contact</Link>
           </li>
         </ul>
       </nav>
