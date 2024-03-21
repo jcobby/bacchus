@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Genesis";
+import Navbar from "../Components/Genesiss";
 import Footer from "../Components/Footer";
 import "./AboutUs.css";
 import backgroundimage from "../assets/images/cta-bg.jpg";

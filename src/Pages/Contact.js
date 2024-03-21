@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../Components/Genesis";
+import Navbar from "../Components/Genesiss";
 import './Contact.css'
 import Footer from '../Components/Footer'
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Genesis";
+import Navbar from "../Components/Genesiss";
 import "./Home.css";
 import desktoplogo from "../assets/images/hero-backgroung-desktop.svg";
 
