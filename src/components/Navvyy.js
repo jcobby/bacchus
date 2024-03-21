@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navvyy() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -42,4 +42,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navvyy;
