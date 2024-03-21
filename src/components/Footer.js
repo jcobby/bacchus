@@ -37,7 +37,6 @@ function Footer() {
         <li><a href="/">Web Design</a></li>
         <li><a href="/">Web Development</a></li>
         <li><a href="/">Product Management</a></li>
-        <li><a href="/">Marketing</a></li>
         <li><a href="/">Graphic Design</a></li>
       </ul>
     </div>
@@ -47,8 +46,8 @@ function Footer() {
       <p>A108 Adam Street</p>
       <p>New York, NY 535022</p>
       <p>United States</p>
-      <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-      <p><strong>Email:</strong> <span>info@example.com</span></p>
+      <p class="mt-4"><strong>Phone:</strong> <span>0244016360</span></p>
+      <p><strong>Email:</strong> <span>Clecobby@gmail.com</span></p>
     </div>
 
   </div>
