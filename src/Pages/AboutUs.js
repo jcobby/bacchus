@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "../Components/Genesiss";
 import Footer from "../Components/Footer";
 import "./AboutUs.css";
 import backgroundimage from "../assets/images/cta-bg.jpg";
-
+import Top from "../Pages/Top"
 
 
 import "swiper/css";
@@ -15,7 +14,7 @@ import "swiper/css/scrollbar";
 function AboutUs() {
   return (
     <div>
-      <Navbar />
+      <Top />
 
 
   <section id="heroAbout" class="heroAbout d-flex align-items-center">

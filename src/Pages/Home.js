@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Components/Genesiss";
 import "./Home.css";
 import desktoplogo from "../assets/images/hero-backgroung-desktop.svg";
 
@@ -10,6 +9,8 @@ import DataOps from '../assets/images/DataOps.jpg'
 import networking from '../assets/images/networking.jpg'
 import procurement from '../assets/images/procurement.jpg'
 import SoftwareEngineering from '../assets/images/SoftwareEngineering.jpg'
+import Top from "../Pages/Top"
+
 
 
 
@@ -40,7 +41,7 @@ import Footer from "../Components/Footer";
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Top />
       <section class="hero">
         <div className="hero-inner">
           <div class="hero-description">

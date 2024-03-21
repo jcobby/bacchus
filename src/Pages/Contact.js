@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from "../Components/Genesiss";
 import './Contact.css'
 import Footer from '../Components/Footer'
+import Top from "../Pages/Top"
 
 
 function Contact() {
   return (
     <div>
-        <Navbar />
+        <Top />
         <section id="contact" class="contact">
 
 
