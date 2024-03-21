@@ -35,7 +35,7 @@ import flask from "../assets/icons/flask.svg";
 import mongodb from "../assets/icons/mongodb.svg";
 import expressjs from "../assets/icons/expressjs.svg";
 import kubernetes from "../assets/icons/kubernetes.svg";
-import Footer from "../Components/Footer";
+import BelowNav from "../Components/BelowNav";
 
 
 function Home() {
@@ -521,7 +521,7 @@ function Home() {
         </div>
       </section> */}
 
- <Footer />
+ <BelowNav />
     </div>
   );
 }

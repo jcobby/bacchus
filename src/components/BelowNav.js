@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function BelowNav() {
   return (
     <div>
        <footer id="footer" class="footer">
@@ -66,4 +66,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default BelowNav

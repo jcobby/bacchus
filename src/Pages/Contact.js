@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import Footer from '../Components/Footer'
+import BelowNav from '../Components/BelowNav'
 import Top from "../Pages/Top"
 
 
@@ -101,7 +101,7 @@ function Contact() {
 
 </section>
 
-<Footer />
+<BelowNav />
     </div>
   )
 }

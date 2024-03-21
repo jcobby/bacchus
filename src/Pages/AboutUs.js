@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Components/Footer";
+import below from "../Components/BelowNav";
 import "./AboutUs.css";
 import backgroundimage from "../assets/images/cta-bg.jpg";
 import Top from "../Pages/Top"
@@ -240,7 +240,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <Footer />
+      <below />
     </div>
   );
 }
