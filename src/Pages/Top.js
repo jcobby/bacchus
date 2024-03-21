@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "../Component/Nav.css";
 import logo from "../assets/icons/Bacchus Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
